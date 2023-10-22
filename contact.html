@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .slide.slide-left-in {
+            animation: slide-left-in 600ms ease-in-out forwards;
+        }
+        .slide.slide-left-out {
+            animation: slide-left-out 600ms ease-in-out forwards;
+        }
+        .slide.slide-right-in {
+            animation: slide-right-in 600ms ease-in-out forwards;
+        }
+        .slide.slide-right-out {
+            animation: slide-right-out 600ms ease-in-out forwards;
+        }
+        @keyframes slide-left-in {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slide-left-out {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes slide-right-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slide-right-out {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+    </style>
+</head>
+<body class="bg-white md:bg-stone-50">
+    <div id="app" class="w-full h-full">
+        <header class="w-full h-full p-0 md:p-8 relative text-zinc-600">
+            <!-- <section id="navbar" class="container max-w-6xl  mx-auto flex justify-between items-center relative z-10">
+                <h1 class="text-xl md:text-2xl font-bold uppercase">Superior Furnitures</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex gap-8 font-semibold">
+                        <li><a href="#" class="nav-link">HOME</a></li>
+                        <li><a href="./about.html" class="nav-link">ABOUT</a></li>
+                        <li><a href="#" class="nav-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <button class="text-2xl block md:hidden"><i class="fas fa-bars"></i></button>
+            </section> -->
+            <section id="contact">
+                <div class="container max-w-full lg:max-w-6xl mx-auto flex flex-wrap md:rounded-md overflow-hidden md:shadow-lg">
+                    <div id="heroBackground" class="w-full md:w-1/2 bg-slate-700 relative overflow-hidden slide-height">
+                        <h1>Jumbo</h1>
+                        <img src="./assets/img/3.jpg" alt="" class="slide">
+                        <img src="./assets/img/4.jpg" alt="" class="slide">
+                        <img src="./assets/img/5.jpg" alt="" class="slide">
+                        <img src="./assets/img/6.jpg" alt="" class="slide">
+                        <div class="w-full h-full flex flex-col justify-between items-start p-6 md:p-8 absolute top-0 left-0 bg-black opacity-70 text-white">
+                            <section id="navbar" class="w-full flex justify-between items-center">
+                                <h1 class="text-lg font-extrabold">Superior Furnitures</h1>
+                                <nav class="hidden lg:block">
+                                    <ul class="flex gap-4 text-sm">
+                                        <li><a href="./index.html" class="nav-link capitalize">home</a></li>
+                                        <li><a href="./about.html" class="nav-link capitalize">about</a></li>
+                                        <li><a href="./contact.html" class="nav-link capitalize active">contact</a></li>
+                                        <li><a href="./galeri.html" class="nav-link capitalize">catalogue</a></li>
+                                    </ul>
+                                </nav>
+                                <button class="text-2xl block lg:hidden" id="openSidebar"><i class="fas fa-bars"></i></button>
+                            </section>
+                            <div id="links">
+                                <div class="w-full">Links</div>
+                                <div class="flex gap-2">
+                                    <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                        <a href="" class="block text-xl"><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                        <a href="" class="block text-xl"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                        <a href="" class="block text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </div>
+                                    <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                        <a href="" class="block text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="h-full w-40 absolute top-0 left-0 group flex items-center" id="prevSide">
+                            <button id="prevButton" class="control-button ml-2 group-hover:opacity-60">
+                                <img src="./assets/img/arrow.svg" alt="" class="w-6 rotate-180">
+                            </button>
+                        </div>
+                        <div class="h-full w-40 absolute top-0 right-0 group flex items-center justify-end" id="nextSide">
+                            <button id="nextButton" class="control-button mr-2 group-hover:opacity-60">
+                                <img src="./assets/img/arrow.svg" alt="" class="w-6">
+                            </button>
+                        </div> -->
+                    </div>
+                    <form action="" class="w-full md:w-1/2 bg-white rounded px-6 py-8 md:p-8">
+                        <h1 class="text-xl font-semibold">Get Touch With Us</h1>
+                        <div class="text-sm">Send your message to us</div>
+                        <div class="mt-4">
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="name">
+                        </div>
+                        <div class="mt-4">
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="email">
+                        </div>
+                        <div class="mt-4">
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="phone">
+                        </div>
+                        <div class="mt-4">
+                            <textarea name="message" id="message" cols="30" rows="8" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="message"></textarea>
+                        </div>
+                        <button class="py-2 px-4 bg-rose-600 text-white text-sm font-semibold mt-4 rounded transition-all duration-300 ease-linear hover:bg-yellow-400 hover:text-slate-900 w-full sm:w-fit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </header>
+        <aside class="w-48 h-screen fixed bg-zinc-900 top-0 right-0 z-50 box-border p-6 translate-x-full transition duration-300 ease-in-out block lg:hidden" id="sidebar">
+            <button id="closeSidebar" class="float-right text-white"><i class="fas fa-x"></i></button>
+            <ul class="flex flex-col items-center gap-8 mt-16">
+                <li><a href="./home.html" class="nav-link">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                <li><a href="./galeri.html" class="nav-link">Catalogue</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+<script>
+    const sidebar = document.getElementById('sidebar')
+    const openSidebar = document.getElementById('openSidebar')
+    const closeSidebar = document.getElementById('closeSidebar')
+    openSidebar.addEventListener('click', ()=>{
+        sidebar.classList.remove('translate-x-full')
+    })
+    closeSidebar.addEventListener('click', ()=>{
+        sidebar.classList.add('translate-x-full')
+    })
+</script>
+<script>
+    const slides = document.getElementsByClassName('slide')
+    const prevButton = document.getElementById('prevButton')
+    const nextButton = document.getElementById('nextButton')
+    // const prevSide = document.getElementById('prevSide')
+    // const nextSide = document.getElementById('nextSide')
+    let slideArr = [0,1,2,3]
+    let continues = true
+    let clickable = true
+    let times
+    let timer
+    async function sleep(duration) {
+        return new Promise(resolve=>{setTimeout(resolve, duration)})
+    }
+    function countdown() {
+        times-=1
+        if(times===0) {
+            continues=true
+            clearInterval(timer)
+            autoSlide()
+        }
+    }
+    function slide(direction, outSlide, inSlide) {
+        for(let i=0;i<slideArr.length;i++) {
+            slides[slideArr[i]].setAttribute('class', 'slide')
+        }
+        outSlide=slideArr[outSlide]
+        inSlide=slideArr[inSlide]
+        slides[outSlide].classList.add(`slide-${direction}-out`)
+        slides[inSlide].classList.add(`slide-${direction}-in`)
+    }
+    function shiftSlide(direction) {
+        if(direction === 'left') {
+            let nextSlide = slideArr[0]
+            slideArr.shift()
+            slideArr.push(nextSlide)
+        } else if(direction === 'right') {
+            let nextSlide = slideArr[slideArr.length-1]
+            slideArr.pop()
+            slideArr.unshift(nextSlide)
+        }
+    }
+    async function autoSlide() {
+        if(continues) {
+            console.log('tes')
+            slide('left', 0, 1)
+            shiftSlide('left')
+            await sleep(4000).then(()=>{autoSlide()})
+        }
+    }
+    async function slideLeft() {
+        if(clickable) {
+            continues = false
+            clickable = false
+            slide('left', 0, 1)
+            shiftSlide('left')
+            await sleep(700).then(()=>{
+                clickable = true
+            })
+            times = 4
+            clearInterval(timer)
+            timer = setInterval(countdown,1000)
+        }
+    }
+    async function slideRight() {
+        if(clickable) {
+            continues = false
+            clickable = false
+            slide('right', 0, 3)
+            shiftSlide('right')
+            await sleep(700).then(()=>{
+                clickable=true
+            })
+            times = 4
+            clearInterval(timer)
+            timer = setInterval(countdown,1000)
+        }
+    }
+    window.onload=()=>{
+        autoSlide()
+    }
+    // prevButton.addEventListener('click', slideLeft)
+    // nextButton.addEventListener('click', slideRight)
+    // prevSide.addEventListener('click', ()=>{prevButton.click()})
+    // nextSide.addEventListener('click', ()=>{nextButton.click()})
+</script>
+</html>

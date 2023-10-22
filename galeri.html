@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .slide.slide-left-in {
+            animation: slide-left-in 600ms ease-in-out forwards;
+        }
+        .slide.slide-left-out {
+            animation: slide-left-out 600ms ease-in-out forwards;
+        }
+        .slide.slide-right-in {
+            animation: slide-right-in 600ms ease-in-out forwards;
+        }
+        .slide.slide-right-out {
+            animation: slide-right-out 600ms ease-in-out forwards;
+        }
+        @keyframes slide-left-in {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slide-left-out {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes slide-right-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slide-right-out {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+    </style>
+</head>
+<body class="bg-stone-200">
+    <div id="app" class="w-full">
+        <header class="w-full h-fit py-4 px-4 md:px-8 text-slate-800 fixed top-0  z-50" id="navbarContainer">
+            <section id="navbar" class="container max-w-6xl  mx-auto flex justify-between items-center relative z-10">
+                <h1 class="text-xl md:text-2xl font-extrabold uppercase text-slate-800">Superior Furnitures</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex gap-8 font-semibold">
+                        <li><a href="./index.html" class="nav-link dark">Home</a></li>
+                        <li><a href="./about.html" class="nav-link dark">About</a></li>
+                        <li><a href="./contact.html" class="nav-link dark">Contact</a></li>
+                        <li><a href="./galeri.html" class="nav-link dark active">Catalogue</a></li>
+                    </ul>
+                </nav>
+                <button class="text-2xl block md:hidden" id="openSidebar"><i class="fas fa-bars"></i></button>
+            </section>
+            
+        </header>
+        
+        <main id="galeri" class="w-full py-28">
+            <div class="container max-w-6xl mx-auto flex flex-col items-center">
+                <h1 class="text-3xl font-bold w-fit block px-3 z-0 bg-stone-200 relative before:absolute before:w-8 md:before:w-16 before:h-[2px] before:bg-rose-500 before:inset-0 before:-translate-x-full before:top-1/2 before:-translate-1/2 after:absolute after:w-8 md:after:w-16 after:h-[2px] after:bg-rose-500 after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-full" >Catalogue</h1>
+                <p class="mt-2 text-center text-slate-600">Our Products' Catalogue</p>
+
+                <div class="w-full mt-8">
+                    <h2 class="text-xl font-bold text-center text-zinc-700">Finished Products</h2>
+                    <div id="finishedProduct" class="w-full grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-4 mb-16">
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image008.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image010.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image012.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image018.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image020.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image021.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image022.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image023.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image031.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image034.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image035.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image059.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image071.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image074.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image081.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image082.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image098.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image102.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/produk_jadi/image121.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold text-center text-zinc-700">Raw Product</h2>
+                    <div id="finishedProduct" class="w-full grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-4">
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/001.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image003.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image006.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image015.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image027.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image030.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image040.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image041.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image043.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image047.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image048.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image049.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image051.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image054.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image055.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image058.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image063.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image064.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image073.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image076.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image092.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image099.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image104.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image105.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image120.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image124.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img aspect-square rounded overflow-hidden">
+                            <img src="./assets/img/raw/image132.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="w-48 h-screen fixed bg-zinc-900 top-0 right-0 z-50 box-border p-6 translate-x-full transition duration-300 ease-in-out block md:hidden" id="sidebar">
+            <button id="closeSidebar" class="float-right text-white"><i class="fas fa-x"></i></button>
+            <ul class="flex flex-col items-center gap-8 mt-16">
+                <li><a href="./home.html" class="nav-link active">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                <li><a href="./galeri.html" class="nav-link">Catalogue</a></li>
+            </ul>
+        </aside>
+        <footer class="w-full py-16 bg-[url('../img/3.jpg')] relative bg-cover bg-center md:bg-top">
+            <div class="layer absolute w-full h-full inset-0 bg-black opacity-70"></div>
+            <div class="container max-w-6xl px-4 sm:px-8 mx-auto relative text-white">
+                
+                <div class="body w-full flex flex-wrap items-baseline justify-between md:justify-start">
+                    <div class="w-1/2 md:w-1/3 text-sm mb-5">
+                        <h2 class="text-2xl font-bold mb-5">Superior Furnitures</h2>
+                        <p>Lorem ipsum dolor <br>
+                        sit amet consectetur adipisicing elit <br> 
+                        Reiciendis neque enim inventore.</p>
+                        <br>
+                        <p><span class="font-bold">Phone</span> : <span class="phone">+6285227608900</span> <br>
+                        <span class="font-bold">Email</span> : <span class="email">yourmail123@example.com</span>
+                        </p>
+                        <div class="flex gap-2 mt-4">
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="w-1/3 md:w-1/5 mb-5">
+                        <h2 class="text-base font-semibold mb-5">Useful Links</h2>
+                        <ul class="text-stone-300 text-sm">
+                            <li class="mb-4 foot-link"><a href="#">Home</a></li>
+                            <li class="mb-4 foot-link"><a href="#">About Us</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Services</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Terms of Service</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3 md:w-1/5 mb-5">
+                        <h2 class="text-base font-semibold mb-5">Our Services</h2>
+                        <ul class="text-stone-300 text-sm">
+                            <li class="mb-4 foot-link"><a href="#">Project Coorperation</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Free Consultation</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Custom Order</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Worldwide Shipping</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Guarantee</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Reporting</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3 md:w-1/5 mb-5">
+                        <h2 class="text-base font-semibold mb-5">Product</h2>
+                        <ul class="text-stone-300 text-sm">
+                            <li class="mb-4 foot-link"><a href="#">All</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Chair</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Table</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Sideboard</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Sofa</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Bed</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer w-full text-center mt-10">
+                    <div class="capitalize text-slate-700">&copy;Copyright <span class="font-bold">Superior Furnitures</span>. All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    const sidebar = document.getElementById('sidebar')
+    const openSidebar = document.getElementById('openSidebar')
+    const closeSidebar = document.getElementById('closeSidebar')
+    openSidebar.addEventListener('click', ()=>{
+        sidebar.classList.remove('translate-x-full')
+    })
+    closeSidebar.addEventListener('click', ()=>{
+        sidebar.classList.add('translate-x-full')
+    })
+</script>
+<script>
+    const navbarContainer = document.getElementById('navbarContainer')
+    
+    window.addEventListener('scroll', (e)=>{
+        var y_pos = window.scrollY
+        console.log(y_pos)
+        if(y_pos > 50) {
+            navbarContainer.classList.add('bg-white/30')
+            navbarContainer.classList.add('backdrop-blur-md')
+        } else {
+            navbarContainer.classList.remove('bg-white/30')
+            navbarContainer.classList.remove('backdrop-blur-md')
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .slide {
+        @apply w-full h-full absolute top-0 left-0 bottom-0 right-0 object-cover translate-x-full;
+    }
+    .slide-height {
+        @apply h-60 md:h-auto;
+    }
+    .control-button {
+        @apply w-10 h-10 flex items-center justify-center bg-stone-400 relative rounded-full  transition-all duration-300 ease-linear opacity-30;
+    }
+    .nav-link {
+        @apply py-2 overflow-hidden block transition-all duration-300 ease-linear text-stone-300 relative after:border-b-2 after:border-b-rose-600 after:absolute after:inset-0 after:transition-all after:duration-300 after:-translate-x-[101%] hover:after:translate-x-0 hover:text-white;
+    }
+    .nav-link.dark {
+        @apply py-2 overflow-hidden block transition-all duration-300 ease-linear text-slate-600 relative after:border-b-2 after:border-b-rose-600 after:absolute after:inset-0 after:transition-all after:duration-300 after:-translate-x-[101%] hover:after:translate-x-0 hover:text-slate-800;
+    }
+    .nav-link.active {
+        @apply after:translate-x-0;
+    }
+    .foot-link {
+        @apply transition-all duration-300 ease-linear hover:text-white;
+    }
+}

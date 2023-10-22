@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superior Furnitures</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .slide.slide-left-in {
+            animation: slide-left-in 600ms ease-in-out forwards;
+        }
+        .slide.slide-left-out {
+            animation: slide-left-out 600ms ease-in-out forwards;
+        }
+        .slide.slide-right-in {
+            animation: slide-right-in 600ms ease-in-out forwards;
+        }
+        .slide.slide-right-out {
+            animation: slide-right-out 600ms ease-in-out forwards;
+        }
+        @keyframes slide-left-in {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slide-left-out {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes slide-right-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slide-right-out {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app" class="w-full overflow-hidden">
+        <header class="w-full h-screen py-8 px-4 md:px-8 relative text-white">
+            <section id="navbar" class="container max-w-6xl  mx-auto flex justify-between items-center relative z-10">
+                <h1 class="text-xl md:text-2xl font-extrabold uppercase">Superior Furnitures</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex gap-8 font-semibold">
+                        <li><a href="./index.html" class="nav-link active">Home</a></li>
+                        <li><a href="./about.html" class="nav-link">About</a></li>
+                        <li><a href="./galeri.html" class="nav-link">Catalogue</a></li>
+                        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="text-2xl block md:hidden" id="openSidebar"><i class="fas fa-bars"></i></button>
+            </section>
+            <aside class="w-48 h-screen fixed bg-zinc-900 top-0 right-0 z-50 box-border p-6 translate-x-full transition duration-300 ease-in-out block md:hidden" id="sidebar">
+                <button id="closeSidebar" class="float-right"><i class="fas fa-x"></i></button>
+                <ul class="flex flex-col items-center gap-8 mt-16">
+                    <li><a href="./home.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="./galeri.html" class="nav-link">Catalogue</a></li>
+                </ul>
+            </aside>
+            <section id="hero" class="w-full h-full absolute top-0 left-0 bg-gray-400 flex justify-center items-center">
+                <div id="heroBackground" class="w-full h-full absolute top-0 left-0 overflow-hidden">
+                    <img src="./assets/img/3.jpg" alt="" class="slide">
+                    <img src="./assets/img/4.jpg" alt="" class="slide">
+                    <img src="./assets/img/5.jpg" alt="" class="slide">
+                    <img src="./assets/img/6.jpg" alt="" class="slide">
+                    <div class="w-full h-full absolute top-0 left-0 bg-black opacity-70"></div>
+                </div>
+                
+                <div id="heroContent" class="w-full relative">
+                    <h1 class="text-4xl md:text-5xl text-center font-bold mb-8 pb-9 relative after:w-20 after:border-b-4 after:border-b-rose-600 after:absolute after:bottom-0 after:right-1/2 after:translate-x-1/2">Welcome to <br> <span class="uppercase">Superior Furnitures</span></h1>
+                    <p class="text-center text-lg mb-4 px-12 sm:px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, inventore!</p>
+                    <p class="text-center text-lg mb-6 px-12 sm:px-0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <a href="#about" class="py-3 px-11 text-white text-center font-semibold block mx-auto border-2 border-rose-600 rounded-full duration-300 hover:bg-rose-600 w-fit">Get Started</a>
+                </div>
+                <div class="h-full w-40 absolute top-0 left-0 group flex items-center" id="prevSide">
+                    <button id="prevButton" class="control-button ml-2 group-hover:opacity-60">
+                        <img src="./assets/img/arrow.svg" alt="" class="w-6 rotate-180">
+                    </button>
+                </div>
+                <div class="h-full w-40 absolute top-0 right-0 group flex items-center justify-end" id="nextSide">
+                    <button id="nextButton" class="control-button mr-2 group-hover:opacity-60">
+                        <img src="./assets/img/arrow.svg" alt="" class="w-6">
+                    </button>
+                </div>
+            </section>
+        </header>
+        <section id="about" class="w-full bg-stone-50 pb-16">
+            <div class="container max-w-6xl px-4 sm:px-8 mx-auto grid grid-cols-1 lg:grid-cols-2 justify-center">
+                <div class="content mt-28">
+                    <h1 class="text-4xl text-zinc-600 w-fit font-semibold relative pb-5 mb-5 after:border-b-rose-600 after:border-b-4 after:absolute after:inset-0 after:w-1/3">About Us</h1>
+                    <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam, a inventore, debitis unde sequi corrupti tempore perferendis rerum veniam vel maxime amet assumenda reprehenderit praesentium voluptas nihil necessitatibus velit sit qui.</p>
+                    <br>
+                    <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolore fugit a tempora est? Accusamus dolorem, sequi officiis, ullam dolor est velit corrupti quis non laboriosam, provident debitis error cupiditate? Quas molestiae tempore magnam illo tempora, eaque ex nesciunt, quasi culpa libero suscipit cupiditate doloremque? Maiores temporibus similique porro repellendus dolore amet corrupti sapiente tempora earum saepe commodi voluptatum rem architecto, inventore accusantium molestiae quisquam ad itaque excepturi reiciendis nulla veniam? Earum error nemo distinctio tempora commodi, eveniet porro. Quis deserunt excepturi eos neque voluptate voluptates corporis quo repellendus provident!</p>
+                </div>
+                <div class="form md:py-8 lg:pl-20 box-border mt-16">
+                    <form action="" class="bg-white rounded px-6 py-8 md:p-8 shadow-sm">
+                        <h1 class="text-xl font-semibold">Get Touch With Us</h1>
+                        <div class="text-sm">Send your message to us</div>
+                        <div class="mt-4">
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="name">
+                        </div>
+                        <div class="mt-4">
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="email">
+                        </div>
+                        <div class="mt-4">
+                            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="phone">
+                        </div>
+                        <div class="mt-4">
+                            <textarea name="message" id="message" cols="30" rows="8" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="message"></textarea>
+                        </div>
+                        <button class="py-2 px-4 bg-rose-600 text-white text-sm font-semibold mt-4 rounded transition-all duration-300 ease-linear hover:bg-yellow-400 hover:text-slate-900 w-full sm:w-fit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="product" class="w-full bg-white py-16">
+            <div class="container max-w-6xl px-4 sm:px-8 mx-auto flex flex-col items-center">
+                <h1 class="text-3xl font-bold w-fit block px-3 z-10 bg-white relative before:absolute before:w-8 md:before:w-16 before:h-[2px] before:bg-rose-500 before:inset-0 before:-translate-x-full before:top-1/2 before:-translate-1/2 after:absolute after:w-8 md:after:w-16 after:h-[2px] after:bg-rose-500 after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-full" >Featured Products</h1>
+                <p class="mt-4 mb-8 text-center">Our Featured Product from Superior Furnitures</p>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
+                    <div class="border border-1">
+                        <img src="./assets/img/produk_jadi/image022.jpg" alt="" class="w-full aspect-[16/9] object-top object-cover">
+                        <article class="bg-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">Meja Sono</h3>
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti reprehenderit magnam est sequi sint itaque ea, numquam magni? Reiciendis iusto repellat quo voluptatem! Tenetur dolorum nam eius sed aut?</p>
+                        </article>
+                    </div>
+                    <div class="border border-1">
+                        <img src="./assets/img/produk_jadi/image059.jpg" alt="" class="w-full aspect-[16/9] object-top object-cover">
+                        <article class="bg-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">Rattan Craft</h3>
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti reprehenderit magnam est sequi sint itaque ea, numquam magni? Reiciendis iusto repellat quo voluptatem! Tenetur dolorum nam eius sed aut?</p>
+                        </article>
+                    </div>
+                    <div class="border border-1">
+                        <img src="./assets/img/produk_jadi/image010.jpg" alt="" class="w-full aspect-[16/9] object-center object-cover">
+                        <article class="bg-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">Furniture Sets</h3>
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti reprehenderit magnam est sequi sint itaque ea, numquam magni? Reiciendis iusto repellat quo voluptatem! Tenetur dolorum nam eius sed aut?</p>
+                        </article>
+                    </div>
+                    <div class="border border-1">
+                        <img src="./assets/img/produk_jadi/image098.jpg" alt="" class="w-full aspect-[16/9] object-center object-cover">
+                        <article class="bg-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">Wood Carving</h3>
+                            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti reprehenderit magnam est sequi sint itaque ea, numquam magni? Reiciendis iusto repellat quo voluptatem! Tenetur dolorum nam eius sed aut?</p>
+                        </article>
+                    </div>
+                </div>
+                <a href="./galeri.html" class="text-rose-600 text-right w-full mt-5">See more products <i class="fas fa-arrow-right"></i></a>
+
+            </div>
+        </section>
+        <section id="service" class="w-full bg-stone-50 py-16">
+            <div class="container max-w-6xl px-4 sm:px-8 mx-auto flex flex-col items-center">
+                <h1 class="text-3xl font-bold w-fit block px-3 z-10 bg-stone-50 relative before:absolute before:w-8 md:before:w-16 before:h-[2px] before:bg-rose-500 before:inset-0 before:-translate-x-full before:top-1/2 before:-translate-1/2 after:absolute after:w-8 md:after:w-16 after:h-[2px] after:bg-rose-500 after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-full" >Our Services</h1>
+                <p class="mt-4 mb-8 text-center">Our Featured Product from Superior Furnitures</p>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between">
+                    <div class="bg-white p-8 group">
+                        <div class="mb-8 z-20 relative after:w-12 after:h-12 after:bg-gray-100 after:absolute after:inset-0 after:-z-10 after:rounded-full after:top-1/2 after:-translate-y-1/2 after:translate-x-1/4 after:transition after:duration-300 after:ease-linear group-hover:after:bg-rose-600">
+                            <span class="text-3xl z-20"><i class="fa-solid fa-refresh"></i></span>
+                        </div>
+                        <h2 class="block w-fit font-bold text-xl pb-4 mb-4 border-b-4 border-gray-100 transition duration-300 ease-linear group-hover:border-rose-600">Project Coorperation</h2>
+                        <p class="mb-4 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dignissimos eius dolorem, neque distinctio repellat eos impedit ipsum fugit.</p>
+                        <a href="#" class="text-rose-600 text-decoration-none">Learn more <span class="text-xl">&#8594;</span></i></a>
+                    </div>
+                    <div class="bg-white p-8 group">
+                        <div class="mb-8 z-20 relative after:w-12 after:h-12 after:bg-gray-100 after:absolute after:inset-0 after:-z-10 after:rounded-full after:top-1/2 after:-translate-y-1/2 after:translate-x-1/4 after:transition after:duration-300 after:ease-linear group-hover:after:bg-rose-600">
+                            <span class="text-3xl z-20 text-zinc-700"><i class="fas fa-comments"></i></span>
+                        </div>
+                        <h2 class="block w-fit font-bold text-xl pb-4 mb-4 border-b-4 border-gray-100 transition duration-300 ease-linear group-hover:border-rose-600 text-zinc-600">Free Consultation</h2>
+                        <p class="mb-4 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dignissimos eius dolorem, neque distinctio repellat eos impedit ipsum fugit.</p>
+                        <a href="#" class="text-rose-600 text-decoration-none">Learn more <span class="text-xl">&#8594;</span></i></a>
+                    </div>
+                    <div class="bg-white p-8 group">
+                        <div class="mb-8 z-20 relative after:w-12 after:h-12 after:bg-gray-100 after:absolute after:inset-0 after:-z-10 after:rounded-full after:top-1/2 after:-translate-y-1/2 after:translate-x-1/4 after:transition after:duration-300 after:ease-linear group-hover:after:bg-rose-600">
+                            <span class="text-3xl z-20 text-zinc-700"><i class="fas fa-tools"></i></span>
+                        </div>
+                        <h2 class="block w-fit font-bold text-xl pb-4 mb-4 border-b-4 border-gray-100 transition duration-300 ease-linear group-hover:border-rose-600 text-zinc-600">Custom Order</h2>
+                        <p class="mb-4 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dignissimos eius dolorem, neque distinctio repellat eos impedit ipsum fugit.</p>
+                        <a href="#" class="text-rose-600 text-decoration-none">Learn more <span class="text-xl">&#8594;</span></i></a>
+                    </div>
+                    <div class="bg-white p-8 group">
+                        <div class="mb-8 z-20 relative after:w-12 after:h-12 after:bg-gray-100 after:absolute after:inset-0 after:-z-10 after:rounded-full after:top-1/2 after:-translate-y-1/2 after:translate-x-1/4 after:transition after:duration-300 after:ease-linear group-hover:after:bg-rose-600">
+                            <span class="text-3xl z-20 text-zinc-700"><i class="fas fa-certificate"></i></span>
+                        </div>
+                        <h2 class="block w-fit font-bold text-xl pb-4 mb-4 border-b-4 border-gray-100 transition duration-300 ease-linear group-hover:border-rose-600 text-zinc-600">Guarantee</h2>
+                        <p class="mb-4 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dignissimos eius dolorem, neque distinctio repellat eos impedit ipsum fugit.</p>
+                        <a href="#" class="text-rose-600 text-decoration-none">Learn more <span class="text-xl">&#8594;</span></i></a>
+                    </div>
+                    <div class="bg-white p-8 group">
+                        <div class="mb-8 z-20 relative after:w-12 after:h-12 after:bg-gray-100 after:absolute after:inset-0 after:-z-10 after:rounded-full after:top-1/2 after:-translate-y-1/2 after:translate-x-1/4 after:transition after:duration-300 after:ease-linear group-hover:after:bg-rose-600">
+                            <span class="text-3xl z-20 text-zinc-700"><i class="fas fa-newspaper"></i></span>
+                        </div>
+                        <h2 class="block w-fit font-bold text-xl pb-4 mb-4 border-b-4 border-gray-100 transition duration-300 ease-linear group-hover:border-rose-600 text-zinc-600">Production Process Reporting</h2>
+                        <p class="mb-4 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dignissimos eius dolorem, neque distinctio repellat eos impedit ipsum fugit.</p>
+                        <a href="#" class="text-rose-600 text-decoration-none">Learn more <span class="text-xl">&#8594;</span></i></a>
+                    </div>
+                    <div class="bg-white p-8 group">
+                        <div class="mb-8 z-20 relative after:w-12 after:h-12 after:bg-gray-100 after:absolute after:inset-0 after:-z-10 after:rounded-full after:top-1/2 after:-translate-y-1/2 after:translate-x-1/4 after:transition after:duration-300 after:ease-linear group-hover:after:bg-rose-600">
+                            <span class="text-3xl z-20 text-zinc-700"><i class="fas fa-truck"></i></span>
+                        </div>
+                        <h2 class="block w-fit font-bold text-xl pb-4 mb-4 border-b-4 border-gray-100 transition duration-300 ease-linear group-hover:border-rose-600 text-zinc-600">Worldwide Shipping</h2>
+                        <p class="mb-4 text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dignissimos eius dolorem, neque distinctio repellat eos impedit ipsum fugit.</p>
+                        <a href="#" class="text-rose-600 text-decoration-none">Learn more <span class="text-xl">&#8594;</span></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="orders" class="w-full bg-white py-16">
+            <div class="container max-w-6xl px-4 sm:px-8 mx-auto flex flex-col items-center">
+                <h1 class="text-3xl font-bold w-fit block px-3 z-10 bg-white relative before:absolute before:w-8 md:before:w-16 before:h-[2px] before:bg-rose-500 before:inset-0 before:-translate-x-full before:top-1/2 before:-translate-1/2 after:absolute after:w-8 md:after:w-16 after:h-[2px] after:bg-rose-500 after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-full" >How to Order?</h1>
+                <p class="mt-4 mb-8 text-center">Our Featured Product from Superior Furnitures</p>
+                <div class="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2">
+                    <div class="flex gap-4 border border-slate-100 py-6 px-4">
+                        <div class="w-14 h-14 shrink-0 shadow-sm flex justify-center items-center">
+                            <span class="text-rose-600 text-2xl"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <article>
+                            <h2 class="font-bold text-zinc-600">Contact Us</h2>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex. Nulla perferendis molestiae officia voluptatibus?</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-4 border border-slate-100 py-6 px-4">
+                        <div class="w-14 h-14 shrink-0 shadow-sm flex justify-center items-center">
+                            <span class="text-rose-600 text-2xl"><i class="fas fa-comments"></i></span>
+                        </div>
+                        <article>
+                            <h2 class="font-bold text-zinc-600">Consultation</h2>
+                            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex. Nulla perferendis molestiae officia voluptatibus?</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-4 border border-slate-100 py-6 px-4">
+                        <div class="w-14 h-14 shrink-0 shadow-sm flex justify-center items-center">
+                            <span class="text-rose-600 text-2xl"><i class="fas fa-credit-card"></i></span>
+                        </div>
+                        <article>
+                            <h2 class="font-bold text-zinc-600">Downpayment</h2>
+                            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex. Nulla perferendis molestiae officia voluptatibus?</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-4 border border-slate-100 py-6 px-4">
+                        <div class="w-14 h-14 shrink-0 shadow-sm flex justify-center items-center">
+                            <span class="text-rose-600 text-2xl"><i class="fas fa-tools"></i></span>
+                        </div>
+                        <article>
+                            <h2 class="font-bold text-zinc-600">Production Process</h2>
+                            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex. Nulla perferendis molestiae officia voluptatibus?</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-4 border border-slate-100 py-6 px-4">
+                        <div class="w-14 h-14 shrink-0 shadow-sm flex justify-center items-center">
+                            <span class="text-rose-600 text-2xl"><i class="fas fa-wallet"></i></span>
+                        </div>
+                        <article>
+                            <h2 class="font-bold text-zinc-600">Repayment</h2>
+                            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex. Nulla perferendis molestiae officia voluptatibus?</p>
+                        </article>
+                    </div>
+                    <div class="flex gap-4 border border-slate-100 py-6 px-4">
+                        <div class="w-14 h-14 shrink-0 shadow-sm flex justify-center items-center">
+                            <span class="text-rose-600 text-2xl"><i class="fas fa-truck"></i></span>
+                        </div>
+                        <article>
+                            <h2 class="font-bold text-zinc-600">Shipping</h2>
+                            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex. Nulla perferendis molestiae officia voluptatibus?</p>
+                        </article>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="w-full py-16 bg-[url('../img/3.jpg')] relative bg-cover bg-center md:bg-top">
+            <div class="layer absolute w-full h-full inset-0 bg-black opacity-70"></div>
+            <div class="container max-w-6xl px-4 sm:px-8 mx-auto relative text-white">
+                
+                <div class="body w-full flex flex-wrap items-baseline justify-between md:justify-start">
+                    <div class="w-1/2 md:w-1/3 text-sm mb-5">
+                        <h2 class="text-2xl font-bold mb-5">Superior Furnitures</h2>
+                        <p>Lorem ipsum dolor <br>
+                        sit amet consectetur adipisicing elit <br> 
+                        Reiciendis neque enim inventore.</p>
+                        <br>
+                        <p><span class="font-bold">Phone</span> : <span class="phone">+6285227608900</span> <br>
+                        <span class="font-bold">Email</span> : <span class="email">yourmail123@example.com</span>
+                        </p>
+                        <div class="flex gap-2 mt-4">
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                            <div class="w-10 aspect-square bg-slate-600/50 flex items-center justify-center rounded-md cursor-pointer transition duration-300 ease-linear hover:bg-rose-600">
+                                <a href="" class="block text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="w-1/3 md:w-1/5 mb-5">
+                        <h2 class="text-base font-semibold mb-5">Useful Links</h2>
+                        <ul class="text-stone-300 text-sm">
+                            <li class="mb-4 foot-link"><a href="#">Home</a></li>
+                            <li class="mb-4 foot-link"><a href="#">About Us</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Services</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Terms of Service</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3 md:w-1/5 mb-5">
+                        <h2 class="text-base font-semibold mb-5">Our Services</h2>
+                        <ul class="text-stone-300 text-sm">
+                            <li class="mb-4 foot-link"><a href="#">Project Coorperation</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Free Consultation</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Custom Order</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Worldwide Shipping</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Guarantee</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Reporting</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3 md:w-1/5 mb-5">
+                        <h2 class="text-base font-semibold mb-5">Product</h2>
+                        <ul class="text-stone-300 text-sm">
+                            <li class="mb-4 foot-link"><a href="#">All</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Chair</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Table</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Sideboard</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Sofa</a></li>
+                            <li class="mb-4 foot-link"><a href="#">Bed</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer w-full text-center mt-10">
+                    <div class="capitalize text-slate-700">&copy;Copyright <span class="font-bold">Superior Furnitures</span>. All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    const slides = document.getElementsByClassName('slide')
+    const prevButton = document.getElementById('prevButton')
+    const nextButton = document.getElementById('nextButton')
+    const prevSide = document.getElementById('prevSide')
+    const nextSide = document.getElementById('nextSide')
+    const sidebar = document.getElementById('sidebar')
+    const openSidebar = document.getElementById('openSidebar')
+    const closeSidebar = document.getElementById('closeSidebar')
+    let slideArr = [0,1,2,3]
+    let continues = true
+    let clickable = true
+    let times
+    let timer
+    async function sleep(duration) {
+        return new Promise(resolve=>{setTimeout(resolve, duration)})
+    }
+    function countdown() {
+        times-=1
+        if(times===0) {
+            continues=true
+            clearInterval(timer)
+            autoSlide()
+        }
+    }
+    function slide(direction, outSlide, inSlide) {
+        for(let i=0;i<slideArr.length;i++) {
+            slides[slideArr[i]].setAttribute('class', 'slide')
+        }
+        outSlide=slideArr[outSlide]
+        inSlide=slideArr[inSlide]
+        slides[outSlide].classList.add(`slide-${direction}-out`)
+        slides[inSlide].classList.add(`slide-${direction}-in`)
+    }
+    function shiftSlide(direction) {
+        if(direction === 'left') {
+            let nextSlide = slideArr[0]
+            slideArr.shift()
+            slideArr.push(nextSlide)
+        } else if(direction === 'right') {
+            let nextSlide = slideArr[slideArr.length-1]
+            slideArr.pop()
+            slideArr.unshift(nextSlide)
+        }
+    }
+    async function autoSlide() {
+        if(continues) {
+            console.log('tes')
+            slide('left', 0, 1)
+            shiftSlide('left')
+            await sleep(4000).then(()=>{autoSlide()})
+        }
+    }
+    async function slideLeft() {
+        if(clickable) {
+            continues = false
+            clickable = false
+            slide('left', 0, 1)
+            shiftSlide('left')
+            await sleep(700).then(()=>{
+                clickable = true
+            })
+            times = 4
+            clearInterval(timer)
+            timer = setInterval(countdown,1000)
+        }
+    }
+    async function slideRight() {
+        if(clickable) {
+            continues = false
+            clickable = false
+            slide('right', 0, 3)
+            shiftSlide('right')
+            await sleep(700).then(()=>{
+                clickable=true
+            })
+            times = 4
+            clearInterval(timer)
+            timer = setInterval(countdown,1000)
+        }
+    }
+    window.onload=()=>{
+        autoSlide()
+    }
+    prevButton.addEventListener('click', slideLeft)
+    nextButton.addEventListener('click', slideRight)
+    prevSide.addEventListener('click', ()=>{prevButton.click()})
+    nextSide.addEventListener('click', ()=>{nextButton.click()})
+    openSidebar.addEventListener('click', ()=>{
+        sidebar.classList.remove('translate-x-full')
+    })
+    closeSidebar.addEventListener('click', ()=>{
+        sidebar.classList.add('translate-x-full')
+    })
+</script>
+</html>
